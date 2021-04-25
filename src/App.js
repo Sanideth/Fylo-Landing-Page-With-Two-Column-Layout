@@ -1,9 +1,16 @@
 import "./App.css";
+import Header from "./layout/Header";
+import SectionInfo from "./layout/SectionInfo";
+import SectionSignup from "./layout/SectionSignup";
+import Footer from "./layout/Footer";
 
 function App() {
   return (
     <div className="App">
-      <header>Hello</header>
+      <Header />
+      <SectionInfo />
+      <SectionSignup />
+      <Footer />
     </div>
   );
 }
