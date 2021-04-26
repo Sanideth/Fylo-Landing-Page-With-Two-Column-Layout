@@ -17,7 +17,11 @@ const Header = () => {
           <div className="header__logo-container">
             <Logo logo={<LogoSvg />} />
           </div>
-          <Nav arr={NavArr} className="header" />
+          <Nav
+            arr={NavArr}
+            className="header"
+            href="https://github.com/Sanideth"
+          />
         </div>
         <div className="header__hero">
           <div className="header__hero-text-container">
