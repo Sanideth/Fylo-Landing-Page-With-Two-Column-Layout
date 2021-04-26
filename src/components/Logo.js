@@ -1,7 +1,5 @@
 const Logo = (props) => {
-  return (
-    <div className={`${props.className}__logo-container`}>{props.logo}</div>
-  );
+  return <>{props.logo}</>;
 };
 
 export default Logo;

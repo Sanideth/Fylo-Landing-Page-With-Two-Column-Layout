@@ -1,6 +1,13 @@
+import { ReactComponent as IconArrow } from "../img/icon-arrow.svg";
+import Icon from "../components/Icon";
+
 const Button = (props) => {
   const type = props.type;
-  const checkSpan = props.span ? <span className="btn-span"></span> : null;
+  const renderDiv = props.div ? (
+    <div className="btn-div">
+      <Icon icon={<IconArrow />} />
+    </div>
+  ) : null;
   const Element = type === "form" ? "button" : "a";
   const href = Element === "a" ? props.link : null;
 
@@ -8,7 +15,7 @@ const Button = (props) => {
     <>
       <Element className={`btn btn-${props.className}`} href={href}>
         {props.text}
-        {checkSpan}
+        {renderDiv}
       </Element>
     </>
   );

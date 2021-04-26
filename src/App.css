@@ -9,7 +9,9 @@ html {
   font-size: 62.5%; }
 
 body {
-  font-family: "Open Sans", sans-serif; }
+  font-family: "Open Sans", sans-serif;
+  color: #070439;
+  font-size: 1.6rem; }
 
 h1,
 h2,
@@ -26,3 +28,106 @@ a,
 a:link,
 a:visited {
   text-decoration: none; }
+
+img {
+  display: block;
+  width: 100%; }
+
+.App {
+  padding: 4rem 0; }
+
+.btn {
+  cursor: pointer;
+  border: none;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; }
+
+.header {
+  padding: 0 4rem 30rem 4rem;
+  background-image: url("./img/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom; }
+  .header__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem; }
+  .header__list {
+    display: flex; }
+    .header__list > *:not(:last-child) {
+      margin-right: 2rem; }
+  .header__link {
+    color: #070439;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600; }
+  .header__hero {
+    display: flex;
+    align-items: center; }
+  .header__hero-text-container {
+    flex-basis: 50%;
+    padding-right: 12rem; }
+    .header__hero-text-container > *:not(:last-child) {
+      margin-bottom: 1rem; }
+  .header__hero-image-container {
+    flex-basis: 50%; }
+  .header__form-container {
+    display: flex; }
+  .header__input {
+    flex-basis: 48%;
+    margin-right: 2rem;
+    border: 1px solid #bfbfbf;
+    border-radius: 0.3rem;
+    padding-left: 2rem;
+    font-family: inherit; }
+    .header__input::placeholder {
+      color: #bfbfbf; }
+
+.section-info {
+  padding: 4rem 4rem 10rem 4rem;
+  background-color: #f6f6fe; }
+  .section-info__content {
+    display: flex; }
+  .section-info__text-container {
+    flex-basis: 50%; }
+    .section-info__text-container > *:not(:last-child) {
+      margin-bottom: 2rem; }
+  .section-info__image-container {
+    flex-basis: 50%; }
+  .section-info__testimonial-img {
+    width: 3rem;
+    height: 3rem; }
+
+.container {
+  max-width: 130rem;
+  margin: 0 auto; }
+
+.heading-primary {
+  line-height: 1.5; }
+
+.btn-primary {
+  padding: 1rem 3rem;
+  background-color: #3065f8;
+  color: #fff;
+  flex-basis: 40%;
+  border-radius: 0.3rem; }
+
+.btn-secondary {
+  color: #3c9f8f;
+  position: relative; }
+  .btn-secondary::after {
+    content: "";
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    height: 1px;
+    width: 100%;
+    background-color: #3c9f8f; }
+
+.btn-div {
+  display: inline-block; }
+
+.heading-secondary {
+  font-size: 3.5rem; }
+
+.paragraph-secondary {
+  width: 80%; }

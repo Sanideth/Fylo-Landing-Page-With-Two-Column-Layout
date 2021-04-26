@@ -1,0 +1,76 @@
+.header {
+  padding: 0 4rem 30rem 4rem;
+  background-image: url("./img/bg-curve-desktop.svg");
+  background-repeat: no-repeat;
+  background-position: 0 bottom;
+  &__top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 10rem;
+  }
+
+  &__list {
+    display: flex;
+    & > *:not(:last-child) {
+      margin-right: 2rem;
+    }
+  }
+  &__link {
+    color: $color-blue-dark;
+    font-family: "Raleway", sans-serif;
+    font-weight: 600;
+  }
+  &__hero {
+    display: flex;
+    align-items: center;
+  }
+  &__hero-text-container {
+    flex-basis: 50%;
+    padding-right: 12rem;
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
+  &__hero-image-container {
+    flex-basis: 50%;
+  }
+
+  &__form-container {
+    display: flex;
+  }
+  &__input {
+    flex-basis: 48%;
+    margin-right: 2rem;
+    border: 1px solid $color-gray;
+    border-radius: 0.3rem;
+    padding-left: 2rem;
+    font-family: inherit;
+    &::placeholder {
+      color: $color-gray;
+    }
+  }
+}
+
+.section-info {
+  padding: 4rem 4rem 10rem 4rem;
+  background-color: $color-blue-gray;
+  &__content {
+    display: flex;
+  }
+  &__text-container {
+    flex-basis: 50%;
+
+    & > *:not(:last-child) {
+      margin-bottom: 2rem;
+    }
+  }
+  &__image-container {
+    flex-basis: 50%;
+  }
+
+  &__testimonial-img {
+    width: 3rem;
+    height: 3rem;
+  }
+}

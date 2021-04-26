@@ -15,8 +15,9 @@ const Header = () => {
       <div className="container">
         <div className="header__top">
           <div className="header__logo-container">
-            <Logo logo={<LogoSvg />} />
+            <Logo logo={<LogoSvg />} className="header" />
           </div>
+
           <Nav
             arr={NavArr}
             className="header"
