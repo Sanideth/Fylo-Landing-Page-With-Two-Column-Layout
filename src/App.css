@@ -113,12 +113,38 @@ img {
   .section-info__user-image-container {
     margin-right: 1rem; }
 
+.section-signup {
+  padding: 8rem 4rem;
+  background-color: #585989;
+  color: #fff; }
+  .section-signup__content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; }
+    .section-signup__content > * {
+      flex-basis: 40%; }
+  .section-signup__text-container > *:not(:last-child) {
+    margin-bottom: 2rem; }
+  .section-signup__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start; }
+  .section-signup__input {
+    width: 80%;
+    padding: 1rem 3rem;
+    border-radius: 0.3rem;
+    border: none;
+    margin-bottom: 1.5rem; }
+
 .container {
-  max-width: 130rem;
+  max-width: 120rem;
   margin: 0 auto; }
 
 .heading-primary {
   line-height: 1.5; }
+
+.heading-tertiary {
+  font-size: 2.5rem; }
 
 .btn-primary {
   padding: 1rem 3rem;
