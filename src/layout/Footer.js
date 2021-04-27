@@ -21,44 +21,48 @@ const Footer = () => {
   ];
   return (
     <footer className="footer">
-      <div className="footer__logo-container">
-        <Logo logo={<LogoSrc />} alt="Main Logo" className="logo" />
-      </div>
-      <div className="footer__details">
-        <div className="footer__contact">
-          <div className="footer__phone">
-            <div className="footer__icon-container">
-              <Icon icon={<IconPhone />} />
-            </div>
-            <div className="footer__text-container">
-              <Paragraph
-                paragraphText="Phone: +1-543-123-4567"
-                paragraphClassName="footer"
-              />
-            </div>
+      <div className="container">
+        <div className="footer__content">
+          <div className="footer__logo-container">
+            <Logo logo={<LogoSrc />} alt="Main Logo" className="logo" />
           </div>
-          <div className="footer__email">
-            <div className="footer__icon-container">
-              <Icon icon={<IconEmail />} />
+          <div className="footer__details">
+            <div className="footer__contact">
+              <div className="footer__phone">
+                <div className="footer__icon-container">
+                  <Icon icon={<IconPhone />} />
+                </div>
+                <div className="footer__text-container">
+                  <Paragraph
+                    paragraphText="Phone: +1-543-123-4567"
+                    paragraphClassName="footer"
+                  />
+                </div>
+              </div>
+              <div className="footer__email">
+                <div className="footer__icon-container">
+                  <Icon icon={<IconEmail />} />
+                </div>
+                <div className="footer__text-container">
+                  <Paragraph
+                    paragraphText="example@fylo.com"
+                    paragraphClassName="footer"
+                  />
+                </div>
+              </div>
             </div>
-            <div className="footer__text-container">
-              <Paragraph
-                paragraphText="example@fylo.com"
-                paragraphClassName="footer"
-              />
+            <Nav arr={navArr} className="footer" />
+            <div className="footer__social-media">
+              <div className="footer__social-media-icon-container">
+                <Icon icon={<IconFacebook />} />
+              </div>
+              <div className="footer__social-media-icon-container">
+                <Icon icon={<IconTwitter />} />
+              </div>
+              <div className="footer__social-media-icon-container">
+                <Icon icon={<IconInstagram />} />
+              </div>
             </div>
-          </div>
-        </div>
-        <Nav arr={navArr} className="footer" />
-        <div className="footer__social-media">
-          <div className="footer__social-media-icon-container">
-            <Icon icon={<IconFacebook />} />
-          </div>
-          <div className="footer__social-media-icon-container">
-            <Icon icon={<IconTwitter />} />
-          </div>
-          <div className="footer__social-media-icon-container">
-            <Icon icon={<IconInstagram />} />
           </div>
         </div>
       </div>

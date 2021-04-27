@@ -134,3 +134,74 @@
     margin-bottom: 1.5rem;
   }
 }
+
+.footer {
+  padding: 8rem 4rem;
+  background-color: $color-blue-dark;
+  color: #fff;
+
+  &__logo-container {
+    margin-bottom: 2rem;
+    & svg path {
+      fill: #fff;
+    }
+  }
+
+  &__details {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__contact {
+    flex-basis: 25%;
+    margin-right: auto;
+  }
+  &__phone,
+  &__email {
+    display: flex;
+  }
+  &__phone {
+    margin-bottom: 2rem;
+  }
+  &__icon-container {
+    margin-right: 2rem;
+  }
+
+  &__nav {
+    flex-basis: 40%;
+  }
+
+  &__list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 1.2rem;
+  }
+
+  &__social-media {
+    flex-basis: 20%;
+    display: flex;
+    align-items: flex-start;
+    & > *:not(:last-child) {
+      margin-right: 1.5rem;
+    }
+  }
+
+  &__social-media-icon-container {
+    & .icon-container {
+      border: 1px solid #fff;
+      border-radius: 50%;
+      height: 3rem;
+      width: 3rem;
+      position: relative;
+      & svg {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 1.5rem;
+        height: 1.5rem;
+        fill: #fff;
+      }
+    }
+  }
+}
