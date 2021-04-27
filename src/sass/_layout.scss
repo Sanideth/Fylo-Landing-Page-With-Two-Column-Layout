@@ -68,9 +68,36 @@
   &__image-container {
     flex-basis: 50%;
   }
+  &__button-container {
+    display: flex;
+  }
+  &__testimonial {
+    margin-top: 5rem;
+    width: 65%;
+    padding: 3rem;
+    background-color: #fff;
+
+    & > *:not(:last-child) {
+      margin-bottom: 1rem;
+    }
+  }
 
   &__testimonial-img {
-    width: 3rem;
-    height: 3rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    & img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%;
+    }
+  }
+
+  &__user-image-container {
+    margin-right: 1rem;
   }
 }

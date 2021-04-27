@@ -13,15 +13,19 @@
   color: #fff;
   flex-basis: 40%;
   border-radius: 0.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
 }
 .btn-secondary {
   color: $color-cyan;
   position: relative;
+  display: flex;
+  align-items: center;
 
   &::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -5px;
     left: 0;
     height: 1px;
     width: 100%;
@@ -31,12 +35,36 @@
 
 .btn-div {
   display: inline-block;
+  margin-left: 0.3rem;
+  & svg {
+    fill: $color-cyan;
+  }
 }
 
 .heading-secondary {
   font-size: 3.5rem;
 }
 
+.heading-user {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800;
+}
+
 .paragraph-secondary {
   width: 80%;
+}
+
+.paragraph-testimonial {
+  font-size: 1.5rem;
+}
+
+.paragraph-user {
+  font-size: 1.3rem;
+}
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }

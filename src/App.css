@@ -38,9 +38,7 @@ img {
 
 .btn {
   cursor: pointer;
-  border: none;
-  font-family: "Raleway", sans-serif;
-  font-weight: 700; }
+  border: none; }
 
 .header {
   padding: 0 4rem 30rem 4rem;
@@ -93,9 +91,27 @@ img {
       margin-bottom: 2rem; }
   .section-info__image-container {
     flex-basis: 50%; }
+  .section-info__button-container {
+    display: flex; }
+  .section-info__testimonial {
+    margin-top: 5rem;
+    width: 65%;
+    padding: 3rem;
+    background-color: #fff; }
+    .section-info__testimonial > *:not(:last-child) {
+      margin-bottom: 1rem; }
   .section-info__testimonial-img {
-    width: 3rem;
-    height: 3rem; }
+    width: 1.5rem;
+    height: 1.5rem; }
+  .section-info__user {
+    display: flex;
+    align-items: center; }
+    .section-info__user img {
+      width: 4rem;
+      height: 4rem;
+      border-radius: 50%; }
+  .section-info__user-image-container {
+    margin-right: 1rem; }
 
 .container {
   max-width: 130rem;
@@ -109,25 +125,48 @@ img {
   background-color: #3065f8;
   color: #fff;
   flex-basis: 40%;
-  border-radius: 0.3rem; }
+  border-radius: 0.3rem;
+  font-family: "Raleway", sans-serif;
+  font-weight: 700; }
 
 .btn-secondary {
   color: #3c9f8f;
-  position: relative; }
+  position: relative;
+  display: flex;
+  align-items: center; }
   .btn-secondary::after {
     content: "";
     position: absolute;
-    bottom: -2px;
+    bottom: -5px;
     left: 0;
     height: 1px;
     width: 100%;
     background-color: #3c9f8f; }
 
 .btn-div {
-  display: inline-block; }
+  display: inline-block;
+  margin-left: 0.3rem; }
+  .btn-div svg {
+    fill: #3c9f8f; }
 
 .heading-secondary {
   font-size: 3.5rem; }
 
+.heading-user {
+  font-family: "Open Sans", sans-serif;
+  font-size: 1.4rem;
+  font-weight: 800; }
+
 .paragraph-secondary {
   width: 80%; }
+
+.paragraph-testimonial {
+  font-size: 1.5rem; }
+
+.paragraph-user {
+  font-size: 1.3rem; }
+
+.icon-container {
+  display: flex;
+  justify-content: center;
+  align-items: center; }

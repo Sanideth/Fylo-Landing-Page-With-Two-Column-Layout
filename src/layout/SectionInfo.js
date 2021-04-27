@@ -31,7 +31,7 @@ const SectionInfo = () => {
               <Button
                 text="See how Fylo works"
                 className="secondary"
-                div={true}
+                withDiv={true}
                 link="https://github.com/Sanideth"
               />
             </div>
