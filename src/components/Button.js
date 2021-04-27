@@ -1,22 +1,28 @@
-import { ReactComponent as IconArrow } from "../img/icon-arrow.svg";
+import { ReactComponent as IconArrow } from "../img/arrow-right-circle.svg";
 import Icon from "../components/Icon";
 
 const Button = (props) => {
-  const type = props.type;
-  const renderDiv = props.div ? (
+  const renderDiv = props.withDiv ? (
     <div className="btn-div">
       <Icon icon={<IconArrow />} />
     </div>
   ) : null;
-  const Element = type === "form" ? "button" : "a";
-  const href = Element === "a" ? props.link : null;
 
   return (
     <>
-      <Element className={`btn btn-${props.className}`} href={href}>
-        {props.text}
-        {renderDiv}
-      </Element>
+      {props.type === "form" ? (
+        <button className={`btn btn-${props.className}`} type="submit">
+          {props.text}
+        </button>
+      ) : (
+        <a
+          href="https://github.com/Sanideth"
+          className={`btn btn-${props.className}`}
+        >
+          {props.text}
+          {renderDiv}
+        </a>
+      )}
     </>
   );
 };
