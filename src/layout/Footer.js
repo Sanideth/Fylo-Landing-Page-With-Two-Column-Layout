@@ -51,16 +51,20 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-            <Nav arr={navArr} className="footer" />
+            <Nav
+              arr={navArr}
+              className="footer"
+              href="https://github.com/Sanideth"
+            />
             <div className="footer__social-media">
               <div className="footer__social-media-icon-container">
-                <Icon icon={<IconFacebook />} />
+                <Icon icon={<IconFacebook />} link={true} />
               </div>
               <div className="footer__social-media-icon-container">
-                <Icon icon={<IconTwitter />} />
+                <Icon icon={<IconTwitter />} link={true} />
               </div>
               <div className="footer__social-media-icon-container">
-                <Icon icon={<IconInstagram />} />
+                <Icon icon={<IconInstagram />} link={true} />
               </div>
             </div>
           </div>

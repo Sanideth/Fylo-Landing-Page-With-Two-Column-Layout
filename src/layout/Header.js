@@ -7,9 +7,23 @@ import Input from "../components/Input";
 import Button from "../components/Button";
 import Image from "../components/Image";
 import imgSrc from "../img/illustration-1.svg";
+import { useState } from "react";
 
 const Header = () => {
   const NavArr = ["Features", "Team", "Sign In"];
+  const [text, setText] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let mailFormat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!text.match(mailFormat)) {
+      setError(true);
+    } else {
+      setError(false);
+    }
+  };
   return (
     <header className="header">
       <div className="container">
@@ -37,7 +51,12 @@ const Header = () => {
   Access them wherever you need, share and collaborate with friends, 
   family, and co-workers."
             />
-            <form action="#" className="header__form">
+            <form
+              action="#"
+              className="header__form"
+              onSubmit={handleSubmit}
+              noValidate
+            >
               <div className="header__form-container">
                 <Input
                   placeholder="Enter your email..."
@@ -45,8 +64,17 @@ const Header = () => {
                   type="email"
                   ariaLabel="email"
                   className="header"
+                  error={error}
+                  text={text}
+                  handleOnChange={setText}
                 />
+
                 <Button type="form" className="primary" text="Get Started" />
+              </div>
+              <div className="error-container">
+                {error ? (
+                  <p className="error-text">Please check your email</p>
+                ) : null}
               </div>
             </form>
           </div>
