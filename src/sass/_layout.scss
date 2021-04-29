@@ -3,6 +3,7 @@
   background-image: url("./img/bg-curve-desktop.svg");
   background-repeat: no-repeat;
   background-position: 0 bottom;
+  background-size: contain;
   &__top {
     display: flex;
     justify-content: space-between;
@@ -20,24 +21,55 @@
     color: $color-blue-dark;
     font-family: "Raleway", sans-serif;
     font-weight: 600;
+    &:hover {
+      text-decoration: underline;
+    }
   }
   &__hero {
     display: flex;
     align-items: center;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
   &__hero-text-container {
     flex-basis: 50%;
     padding-right: 12rem;
+    @media only screen and (max-width: $bp-big) {
+      padding-right: 2rem;
+    }
+    @media only screen and (max-width: $bp-medium) {
+      padding-right: 0;
+      order: 2;
+      text-align: center;
+    }
+
     & > *:not(:last-child) {
       margin-bottom: 1rem;
     }
   }
   &__hero-image-container {
     flex-basis: 50%;
+    @media only screen and (max-width: $bp-medium) {
+      order: 1;
+      margin-bottom: 4rem;
+    }
+    & img {
+      @media only screen and (max-width: $bp-medium) {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
 
   &__form-container {
     display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: space-between;
+    }
+    @media only screen and (max-width: $bp-small) {
+      flex-direction: column;
+    }
   }
   &__input {
     flex-basis: 48%;
@@ -45,9 +77,10 @@
     border: 1px solid $color-gray;
     border-radius: 0.3rem;
     padding-left: 2rem;
-    font-family: inherit;
-    &::placeholder {
-      color: $color-gray;
+
+    @media only screen and (max-width: $bp-small) {
+      margin-right: 0;
+      margin-bottom: 2rem;
     }
   }
 }
@@ -57,9 +90,15 @@
   background-color: $color-blue-gray;
   &__content {
     display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
   &__text-container {
     flex-basis: 50%;
+    @media only screen and (max-width: $bp-medium) {
+      order: 2;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 2rem;
@@ -67,15 +106,34 @@
   }
   &__image-container {
     flex-basis: 50%;
+
+    @media only screen and (max-width: $bp-medium) {
+      order: 1;
+      margin-bottom: 4rem;
+      & img {
+        width: 80%;
+        margin: 0 auto;
+      }
+    }
   }
   &__button-container {
     display: flex;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
   }
   &__testimonial {
     margin-top: 5rem;
     width: 65%;
     padding: 3rem;
     background-color: #fff;
+    @media only screen and (max-width: $bp-medium) {
+      margin-left: auto;
+      margin-right: auto;
+    }
+    @media only screen and (max-width: $bp-small) {
+      width: 85%;
+    }
 
     & > *:not(:last-child) {
       margin-bottom: 1rem;
@@ -111,16 +169,29 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+      align-items: stretch;
+    }
     & > * {
       flex-basis: 40%;
     }
   }
   &__text-container {
+    @media only screen and (max-width: $bp-medium) {
+      text-align: center;
+      margin-bottom: 4rem;
+    }
     & > *:not(:last-child) {
       margin-bottom: 2rem;
     }
   }
-
+  &__form {
+    @media only screen and (max-width: $bp-medium) {
+      width: 60%;
+      margin: 0 auto;
+    }
+  }
   &__form-container {
     display: flex;
     flex-direction: column;
@@ -129,9 +200,15 @@
   &__input {
     width: 80%;
     padding: 1rem 3rem;
-    border-radius: 0.3rem;
-    border: none;
     margin-bottom: 1.5rem;
+    @media only screen and (max-width: $bp-medium) {
+      width: 100%;
+    }
+    & ~ p {
+      color: #fff;
+      opacity: 0.7;
+      margin-bottom: 1rem;
+    }
   }
 }
 
@@ -150,11 +227,17 @@
   &__details {
     display: flex;
     justify-content: space-between;
+    @media only screen and (max-width: $bp-medium) {
+      flex-direction: column;
+    }
   }
 
   &__contact {
     flex-basis: 25%;
     margin-right: auto;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 3rem;
+    }
   }
   &__phone,
   &__email {
@@ -169,18 +252,48 @@
 
   &__nav {
     flex-basis: 40%;
+    @media only screen and (max-width: $bp-medium) {
+      margin-bottom: 4rem;
+    }
   }
 
   &__list {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-row-gap: 1.2rem;
+    @media only screen and (max-width: $bp-medium) {
+      grid-template-columns: 1fr;
+    }
+  }
+  &__item {
+    @media only screen and (max-width: $bp-medium) {
+      &:nth-child(2) {
+        grid-row: 5 / 6;
+      }
+      &:nth-child(5) {
+        grid-row: 3 / 4;
+      }
+      &:last-child {
+        grid-row: 4 / 5;
+        margin-bottom: 3.5rem;
+      }
+    }
+  }
+  &__link {
+    color: #fff;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-blue-light;
+    }
   }
 
   &__social-media {
     flex-basis: 20%;
     display: flex;
     align-items: flex-start;
+    @media only screen and (max-width: $bp-medium) {
+      justify-content: center;
+    }
     & > *:not(:last-child) {
       margin-right: 1.5rem;
     }
@@ -193,6 +306,14 @@
       height: 3rem;
       width: 3rem;
       position: relative;
+      transition: all 0.2s;
+      &:hover {
+        border-color: $color-blue-light;
+        & svg {
+          fill: $color-blue-light;
+        }
+      }
+
       & svg {
         position: absolute;
         top: 50%;
@@ -201,6 +322,7 @@
         width: 1.5rem;
         height: 1.5rem;
         fill: #fff;
+        transition: all 0.2s;
       }
     }
   }

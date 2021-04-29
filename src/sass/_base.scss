@@ -47,3 +47,22 @@ img {
   cursor: pointer;
   border: none;
 }
+
+input {
+  font-family: inherit;
+  transition: all 0.2s;
+  border: 1px solid $color-gray;
+  border-radius: 0.3rem;
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+  &::placeholder {
+    color: $color-gray;
+  }
+  &:focus {
+    border-color: #000;
+    outline: none;
+  }
+  &::-webkit-validation-bubble-message {
+    display: none;
+  }
+}
