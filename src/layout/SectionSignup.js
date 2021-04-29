@@ -2,8 +2,22 @@ import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
 import Input from "../components/Input";
 import Button from "../components/Button";
+import { useState } from "react";
 
 const SectionSignup = () => {
+  const [text, setText] = useState("");
+  const [error, setError] = useState(false);
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    let mailFormat = /^(([^<>()[\]\\.,;:\s@"]+(\.[^<>()[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+    if (!text.match(mailFormat)) {
+      setError(true);
+    } else {
+      setError(false);
+    }
+  };
   return (
     <section className="section-signup">
       <div className="container">
@@ -20,7 +34,12 @@ const SectionSignup = () => {
               paragraphClassName="tertiary"
             />
           </div>
-          <form action="#" className="section-signup__form">
+          <form
+            action="#"
+            className="section-signup__form"
+            noValidate
+            onSubmit={handleSubmit}
+          >
             <div className="section-signup__form-container">
               <Input
                 type="email"
@@ -28,7 +47,13 @@ const SectionSignup = () => {
                 ariaLabel="email"
                 className="section-signup"
                 placeholder="email@example.com"
+                error={error}
+                text={text}
+                handleOnChange={setText}
               />
+              {error ? (
+                <p className="error-text">Please check your email</p>
+              ) : null}
               <Button
                 type="form"
                 text="Get Started For Free"
