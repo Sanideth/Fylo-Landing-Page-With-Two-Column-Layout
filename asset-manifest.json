@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Fylo-Landing-Page-With-Two-Column-Layout/static/css/main.bc7d88ff.chunk.css",
+    "main.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.69eca47a.chunk.js",
+    "main.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.69eca47a.chunk.js.map",
+    "runtime-main.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/runtime-main.650f4b72.js",
+    "runtime-main.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/runtime-main.650f4b72.js.map",
+    "static/js/2.152c8ff6.chunk.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/2.152c8ff6.chunk.js",
+    "static/js/2.152c8ff6.chunk.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/2.152c8ff6.chunk.js.map",
+    "static/js/3.3f8b43f0.chunk.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/3.3f8b43f0.chunk.js",
+    "static/js/3.3f8b43f0.chunk.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/3.3f8b43f0.chunk.js.map",
+    "index.html": "/Fylo-Landing-Page-With-Two-Column-Layout/index.html",
+    "static/css/main.bc7d88ff.chunk.css.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/css/main.bc7d88ff.chunk.css.map",
+    "static/js/2.152c8ff6.chunk.js.LICENSE.txt": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/2.152c8ff6.chunk.js.LICENSE.txt",
+    "static/media/arrow-right-circle.24b8b7a6.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/arrow-right-circle.24b8b7a6.svg",
+    "static/media/App.prefixed.css": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/bg-curve-desktop.37e8a645.svg",
+    "static/media/facebook.69afda5b.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/facebook.69afda5b.svg",
+    "static/media/icon-email.19ab894b.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/icon-email.19ab894b.svg",
+    "static/media/icon-phone.43c05d1a.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/icon-phone.43c05d1a.svg",
+    "static/media/icon-quotes.fefaf075.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/icon-quotes.fefaf075.svg",
+    "static/media/illustration-1.61162776.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/illustration-1.61162776.svg",
+    "static/media/illustration-2.b324b94f.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/illustration-2.b324b94f.svg",
+    "static/media/instagram.9bd6921d.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/instagram.9bd6921d.svg",
+    "static/media/logo.323ee8ce.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/logo.323ee8ce.svg",
+    "static/media/twitter.03576904.svg": "/Fylo-Landing-Page-With-Two-Column-Layout/static/media/twitter.03576904.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.650f4b72.js",
+    "static/js/2.152c8ff6.chunk.js",
+    "static/css/main.bc7d88ff.chunk.css",
+    "static/js/main.69eca47a.chunk.js"
+  ]
+}
