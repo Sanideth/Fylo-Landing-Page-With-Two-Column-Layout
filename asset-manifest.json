@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/Fylo-Landing-Page-With-Two-Column-Layout/static/css/main.bc7d88ff.chunk.css",
-    "main.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.69eca47a.chunk.js",
-    "main.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.69eca47a.chunk.js.map",
+    "main.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.d6ad6cd6.chunk.js",
+    "main.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/main.d6ad6cd6.chunk.js.map",
     "runtime-main.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/runtime-main.650f4b72.js",
     "runtime-main.js.map": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/runtime-main.650f4b72.js.map",
     "static/js/2.152c8ff6.chunk.js": "/Fylo-Landing-Page-With-Two-Column-Layout/static/js/2.152c8ff6.chunk.js",
@@ -28,6 +28,6 @@
     "static/js/runtime-main.650f4b72.js",
     "static/js/2.152c8ff6.chunk.js",
     "static/css/main.bc7d88ff.chunk.css",
-    "static/js/main.69eca47a.chunk.js"
+    "static/js/main.d6ad6cd6.chunk.js"
   ]
 }
