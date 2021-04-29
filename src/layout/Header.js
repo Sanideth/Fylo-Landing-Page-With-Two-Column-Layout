@@ -1,4 +1,3 @@
-import { ReactComponent as LogoSvg } from "../img/logo.svg";
 import Nav from "../components/Nav";
 import Heading from "../components/Heading";
 import Paragraph from "../components/Paragraph";
