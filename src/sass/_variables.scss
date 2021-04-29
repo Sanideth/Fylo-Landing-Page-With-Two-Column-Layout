@@ -6,3 +6,9 @@ $color-blue-bright: hsl(224, 93%, 58%);
 $color-blue-gray: hsl(240, 75%, 98%);
 $color-cyan: hsl(170, 45%, 43%);
 $color-gray: hsl(0, 0%, 75%);
+
+// media queries
+
+$bp-big: 62.5em; //bp at 1000px
+$bp-medium: 50em; //bp at 800px
+$bp-small: 37.5em; //bp at 600px
