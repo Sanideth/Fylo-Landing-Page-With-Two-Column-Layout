@@ -4,17 +4,39 @@
   background-repeat: no-repeat;
   background-position: 0 bottom;
   background-size: contain;
+  @media only screen and (max-width: $bp-medium) {
+    padding-bottom: 20rem;
+  }
+  @media only screen and (max-width: $bp-tiny) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+    padding-bottom: 12rem;
+  }
   &__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10rem;
   }
+  &__logo-container {
+    @media only screen and (max-width: $bp-tiny) {
+      flex-basis: 40%;
+    }
+  }
+
+  &__logo-img {
+    @media only screen and (max-width: $bp-small) {
+      width: 70%;
+    }
+  }
 
   &__list {
     display: flex;
     & > *:not(:last-child) {
       margin-right: 2rem;
+      @media only screen and (max-width: $bp-small) {
+        margin-right: 1rem;
+      }
     }
   }
   &__link {
@@ -64,11 +86,19 @@
 
   &__form-container {
     display: flex;
+    flex-wrap: wrap;
     @media only screen and (max-width: $bp-medium) {
       justify-content: space-between;
     }
     @media only screen and (max-width: $bp-small) {
       flex-direction: column;
+      flex-wrap: nowrap;
+      & input {
+        margin-bottom: 0;
+      }
+      & .error-container {
+        margin-bottom: 2rem;
+      }
     }
   }
   &__input {
@@ -81,6 +111,7 @@
     @media only screen and (max-width: $bp-small) {
       margin-right: 0;
       margin-bottom: 2rem;
+      order: 1;
     }
   }
 }
@@ -88,6 +119,10 @@
 .section-info {
   padding: 4rem 4rem 10rem 4rem;
   background-color: $color-blue-gray;
+  @media only screen and (max-width: $bp-tiny) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
   &__content {
     display: flex;
     @media only screen and (max-width: $bp-medium) {
@@ -164,6 +199,10 @@
   padding: 8rem 4rem;
   background-color: $color-blue-light;
   color: #fff;
+  @media only screen and (max-width: $bp-tiny) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
 
   &__content {
     display: flex;
@@ -216,6 +255,10 @@
   padding: 8rem 4rem;
   background-color: $color-blue-dark;
   color: #fff;
+  @media only screen and (max-width: $bp-tiny) {
+    padding-right: 3rem;
+    padding-left: 3rem;
+  }
 
   &__logo-container {
     margin-bottom: 2rem;

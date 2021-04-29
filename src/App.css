@@ -7,6 +7,9 @@
 
 html {
   font-size: 62.5%; }
+  @media only screen and (max-width: 37.5em) {
+    html {
+      font-size: 55%; } }
 
 body {
   font-family: "Open Sans", sans-serif;
@@ -61,15 +64,32 @@ input {
   background-repeat: no-repeat;
   background-position: 0 bottom;
   background-size: contain; }
+  @media only screen and (max-width: 50em) {
+    .header {
+      padding-bottom: 20rem; } }
+  @media only screen and (max-width: 25em) {
+    .header {
+      padding-right: 3rem;
+      padding-left: 3rem;
+      padding-bottom: 12rem; } }
   .header__top {
     display: flex;
     justify-content: space-between;
     align-items: center;
     margin-bottom: 10rem; }
+  @media only screen and (max-width: 25em) {
+    .header__logo-container {
+      flex-basis: 40%; } }
+  @media only screen and (max-width: 37.5em) {
+    .header__logo-img {
+      width: 70%; } }
   .header__list {
     display: flex; }
     .header__list > *:not(:last-child) {
       margin-right: 2rem; }
+      @media only screen and (max-width: 37.5em) {
+        .header__list > *:not(:last-child) {
+          margin-right: 1rem; } }
   .header__link {
     color: #070439;
     font-family: "Raleway", sans-serif;
@@ -106,13 +126,19 @@ input {
         width: 80%;
         margin: 0 auto; } }
   .header__form-container {
-    display: flex; }
+    display: flex;
+    flex-wrap: wrap; }
     @media only screen and (max-width: 50em) {
       .header__form-container {
         justify-content: space-between; } }
     @media only screen and (max-width: 37.5em) {
       .header__form-container {
-        flex-direction: column; } }
+        flex-direction: column;
+        flex-wrap: nowrap; }
+        .header__form-container input {
+          margin-bottom: 0; }
+        .header__form-container .error-container {
+          margin-bottom: 2rem; } }
   .header__input {
     flex-basis: 48%;
     margin-right: 2rem;
@@ -122,11 +148,16 @@ input {
     @media only screen and (max-width: 37.5em) {
       .header__input {
         margin-right: 0;
-        margin-bottom: 2rem; } }
+        margin-bottom: 2rem;
+        order: 1; } }
 
 .section-info {
   padding: 4rem 4rem 10rem 4rem;
   background-color: #f6f6fe; }
+  @media only screen and (max-width: 25em) {
+    .section-info {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
   .section-info__content {
     display: flex; }
     @media only screen and (max-width: 50em) {
@@ -184,6 +215,10 @@ input {
   padding: 8rem 4rem;
   background-color: #585989;
   color: #fff; }
+  @media only screen and (max-width: 25em) {
+    .section-signup {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
   .section-signup__content {
     display: flex;
     align-items: center;
@@ -224,6 +259,10 @@ input {
   padding: 8rem 4rem;
   background-color: #070439;
   color: #fff; }
+  @media only screen and (max-width: 25em) {
+    .footer {
+      padding-right: 3rem;
+      padding-left: 3rem; } }
   .footer__logo-container {
     margin-bottom: 2rem; }
     .footer__logo-container svg path {
@@ -310,6 +349,9 @@ input {
 
 .heading-tertiary {
   font-size: 2.5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-tertiary {
+      font-size: 2rem; } }
 
 .btn-primary {
   padding: 1rem 3rem;
@@ -326,7 +368,8 @@ input {
       width: 100%; } }
   @media only screen and (max-width: 37.5em) {
     .btn-primary {
-      margin-bottom: 2rem; } }
+      margin-bottom: 2rem;
+      order: 3; } }
   .btn-primary:hover {
     background-color: #537ff9; }
 
@@ -365,6 +408,12 @@ input {
   @media only screen and (max-width: 50em) {
     .heading-secondary {
       text-align: center; } }
+  @media only screen and (max-width: 37.5em) {
+    .heading-secondary {
+      font-size: 2.5rem; } }
+  @media only screen and (max-width: 25em) {
+    .heading-secondary {
+      font-size: 2rem; } }
 
 .heading-user {
   font-family: "Open Sans", sans-serif;
@@ -391,6 +440,10 @@ input {
 .icon-link {
   height: 100%;
   width: 100%; }
+
+@media only screen and (max-width: 37.5em) {
+  .error-container {
+    order: 2; } }
 
 .error {
   border-color: red;
