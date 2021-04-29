@@ -29,7 +29,7 @@ const Header = () => {
         <div className="header__top">
           <div className="header__logo-container">
             <a href="https://github.com/Sanideth" className="header__logo-link">
-              <Image src={logoSrc} className="header__logo" />
+              <Image src={logoSrc} className="header__logo" alt="Logo" />
             </a>
           </div>
 
